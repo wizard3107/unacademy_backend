@@ -1,7 +1,8 @@
 const express = require("express");
 const cors = require("cors")
+require('dotenv').config()
 const mongoose = require("mongoose");
-const port  = 8005
+const port  = process.env.PORT||5000
 const DB_url = "mongodb+srv://Ashish8923:ashu_8923@unacademy.upire.mongodb.net/Unacademy?retryWrites=true&w=majority"
 
 const educatorController = require("./Components/Educator/educators.controller")
